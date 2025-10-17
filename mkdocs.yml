@@ -30,6 +30,7 @@ extra_javascript:
   - javascripts/fix-navigation.js
 
 nav:
+  - Home: index.md
   - Setup:
       - Pre-criteria: setup/pre-criteria.md
       - Rooms & Equipment: setup/rooms-equipment.md

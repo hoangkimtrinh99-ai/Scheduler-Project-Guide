@@ -36,6 +36,15 @@ Staff members are the people who provide services to your customers. Each staff 
 
 Follow along in this short video to see exactly how it's done!
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0;">
+  <iframe src="https://www.youtube.com/embed/_fj8c6qW9KE" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</div>
+
 ## Next Steps
 
 After setting up staff members, proceed to: [Setup Staff Schedules](staff-schedules.md)
