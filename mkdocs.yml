@@ -1,0 +1,45 @@
+site_name: Scheduler User Guide
+theme:
+  name: material
+  language: en
+  logo: image/CRS_LOGO-01.png
+  palette:
+    - scheme: default
+      primary: white
+      accent: blue
+  features:
+    - navigation.expand
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/fix-navigation.js
+
+nav:
+  - Setup:
+      - Pre-criteria: setup/pre-criteria.md
+      - Rooms & Equipment: setup/rooms-equipment.md
+      - Specialization & Skills: setup/specialization-skills.md
+      - Branch Operating Hours: setup/branch-hours.md
+      - Staff Shift Template: setup/staff-shift-template.md
+      - Branch Room: setup/branch-room.md
+      - Branch Equipment: setup/branch-equipment.md
+      - Service Category: setup/service-category.md
+      - Service: setup/service.md
+      - Staff / Counsellors: setup/staff.md
+      - Staff Schedules: setup/staff-schedules.md
+  - Integration:
+      - Outlook (Tenant): integration/outlook-tenant.md
+      - Outlook (Staff): integration/outlook-staff.md
+  - Appointments:
+      - Create Appointment: appointments/create-appointment.md

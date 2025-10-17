@@ -1,0 +1,655 @@
+/* Clean Professional Scheduler User Guide Styling */
+
+/* White header/tab bar */
+.md-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.md-header__inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+    
+.md-header__button {
+    color: #1f2937;
+}
+
+.md-header__title {
+    color: #1f2937;
+}
+
+/* Logo styling */
+.md-header__button.md-logo {
+    padding: 0.2rem;
+    margin-left: 0;
+}
+
+.md-header__button.md-logo img {
+    height: 2rem;
+    width: auto;
+}
+
+/* Increase line spacing for feature lists */
+.md-typeset p {
+    line-height: 1.8;
+}
+
+.md-typeset strong {
+    line-height: 1.8;
+}
+
+/* Clean color scheme matching the design */
+:root {
+    --text-dark: #2c3e50;
+    --text-medium: #5a6c7d;
+    --text-light: #8a9ba8;
+    --background-white: #ffffff;
+    --background-light: #f8f9fa;
+    --highlight-purple: #f0eefc;
+    --border-light: #e9ecef;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+/* Clean typography */
+.md-typeset {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Clean header styling */
+.md-typeset h1 {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.md-typeset h2 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+/* Reset margins for content alignment */
+.md-content h2 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Simple Clean Sidebar Navigation */
+.md-sidebar {
+    width: 320px;
+}
+
+.md-sidebar__scrollwrap {
+    overflow-x: hidden;
+    max-width: 320px;
+}
+
+.md-sidebar__inner {
+    width: 320px;
+    max-width: 320px;
+}
+
+/* Increase overall container width to accommodate sidebar and content */
+.md-container {
+    max-width: 100%;
+}
+
+.md-main__inner {
+    max-width: none;
+}
+
+.md-content {
+    max-width: 100%;
+}
+
+.md-nav__list {
+    background: transparent;
+    padding: 0.5rem 0.125rem;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section headers */
+.md-nav__title {
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    padding: 0;
+    border: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.md-nav__title:first-child {
+    margin-top: 0;
+}
+
+/* Navigation items */
+.md-nav__item {
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navigation links */
+.md-nav__link {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    display: block;
+    line-height: 1.3;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Override for top-level navigation items with nested children (Setup, Integration, Appointments) */
+.md-nav--primary > .md-nav__list > .md-nav__item:has(.md-nav__list) > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link:has(+ .md-nav) {
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0.25rem;
+}
+
+/* Remove default MkDocs arrows - but NOT our custom ones */
+.md-nav__link::after,
+.md-nav__item::after,
+.md-nav__item::before,
+label.md-nav__link::after,
+.md-nav__toggle + .md-nav__link::after,
+.md-nav__icon,
+.md-nav__toggle::after,
+.md-nav__toggle::before {
+    display: none !important;
+    content: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide ::before for non-parent items */
+.md-nav__link::before {
+    display: none;
+}
+
+/* Hide any span/icon inside nav links that might be arrows */
+.md-nav__link > .md-icon,
+.md-nav__link > span.md-nav__icon {
+    display: none !important;
+}
+
+/* Add ONLY our custom arrow using a different pseudo element approach */
+.md-nav--primary > .md-nav__list > .md-nav__item:has(.md-nav__list) > .md-nav__link::before {
+    content: '›' !important;
+    display: inline-block !important;
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    color: #6b7280 !important;
+    transition: transform 0.2s ease !important;
+    transform: rotate(90deg) !important;
+    order: 999 !important;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+    width: 16px !important;
+    text-align: center !important;
+}
+
+/* No arrow for items without children (like Home) */
+.md-nav--primary > .md-nav__list > .md-nav__item:not(:has(.md-nav__list)) > .md-nav__link {
+    font-weight: 600;
+    color: #374151;
+}
+
+.md-nav__link:hover {
+    background: #f3f4f6;
+    color: #1f2937;
+    text-decoration: none;
+}
+
+/* Active navigation item */
+.md-nav__item--active > .md-nav__link {
+    background: #e0e7ff;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Nested navigation items */
+.md-nav__item .md-nav__item {
+    margin-left: 0.75rem;
+}
+
+.md-nav__item .md-nav__item .md-nav__link {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.5rem;
+    font-weight: 400;
+    color: #4b5563;
+    line-height: 1.3;
+    max-width: 100%;
+}
+
+.md-nav__item .md-nav__item .md-nav__link:hover {
+    background: #f9fafb;
+}
+
+/* Focus states */
+.md-nav__link:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+.md-typeset h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem 0;
+}
+
+.md-typeset h4 {
+    font-size: 1rem;
+    color: var(--text-medium);
+    font-weight: 600;
+    margin: 1.25rem 0 0.5rem 0;
+}
+
+.md-typeset h5 {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    font-weight: 500;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.md-typeset h6 {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    font-weight: 500;
+    margin: 0.75rem 0 0.5rem 0;
+}
+
+/* Navigation headers in sidebar */
+.md-nav__item--active > .md-nav__link {
+    color: #1e3a8a !important;
+    font-weight: bold !important;
+}
+
+/* Professional card styling */
+.grid.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.grid.cards .card {
+    background: #ffffff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid.cards .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Clean alert boxes matching the design */
+.md-typeset .admonition {
+    background: var(--background-white);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+
+.md-typeset .admonition.success {
+    border-left: 4px solid #28a745;
+    background: #f8fff9;
+}
+
+.md-typeset .admonition.question {
+    border-left: 4px solid #007bff;
+    background: #f8f9ff;
+}
+
+.md-typeset .admonition.warning {
+    border-left: 4px solid #ffc107;
+    background: #fffef8;
+}
+
+.md-typeset .admonition.info {
+    border-left: 4px solid #17a2b8;
+    background: #f8fcfd;
+}
+
+/* Modern navy blue step indicators with glow effect */
+.step-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-right: 0.75rem;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(30, 58, 138, 0.3);
+    position: relative;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.step-indicator::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.4;
+    filter: blur(4px);
+}
+
+/* Enhanced step indicators for numbered lists */
+.md-typeset ol {
+    counter-reset: step-counter;
+    padding-left: 0;
+    margin: 1rem 0 1rem 0;
+    list-style: none;
+}
+
+.md-typeset ol li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-size: 0.85rem;
+    counter-increment: step-counter;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.md-typeset ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(30, 58, 138, 0.3);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Clean code blocks matching the design */
+.md-typeset pre {
+    background: var(--background-light);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    padding: 1rem;
+}
+
+.md-typeset code {
+    background: var(--background-light);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.85em;
+    color: var(--text-dark);
+}
+
+/* Clean tables matching the design */
+.md-typeset table {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    border: 1px solid var(--border-light);
+    margin: 1rem 0;
+}
+
+.md-typeset table th {
+    background: var(--background-light);
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.md-typeset table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-dark);
+}
+
+.md-typeset table tr:hover {
+    background-color: var(--background-light);
+}
+
+/* Clean links matching the design */
+.md-typeset a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.md-typeset a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Clean button styling */
+.md-typeset .md-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.85rem;
+}
+
+.md-typeset .md-button:hover {
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+/* Professional spacing */
+.md-content {
+    line-height: 1.7;
+}
+
+.md-content p {
+    margin-bottom: 1rem;
+}
+
+.md-content ul, .md-content ol {
+    margin-bottom: 1rem;
+}
+
+/* Clean list styling matching the design */
+.md-typeset ul { 
+    list-style-type: none; 
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.md-typeset ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-size: 0.85rem;
+}
+
+.md-typeset ul li::before {
+    content: "•";
+    color: var(--text-medium);
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.md-typeset ul ul { 
+    margin-left: 1rem; 
+    margin-top: 0.25rem;
+}
+
+.md-typeset ul ul li::before {
+    content: "◦";
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.md-typeset ul ul ul { 
+    margin-left: 1rem; 
+}
+
+.md-typeset ul ul ul li::before {
+    content: "▪";
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+/* Clean ordered list styling */
+.md-typeset ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.md-typeset ol li {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-size: 0.85rem;
+}
+
+/* Highlighted list items like in the design */
+.md-typeset ul li.highlighted {
+    background: var(--highlight-purple);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.25rem 0;
+}
+
+/* Professional icons */
+.md-typeset .twemoji {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+/* Clean image styling matching the design */
+.md-typeset img {
+    max-width: 560px;
+    height: auto;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    margin: 1rem 0;
+}
+
+/* Make specific images smaller */
+.md-typeset img[src*="create%20customer%202.png"],
+.md-typeset img[src*="Create%20Room%202.png"],
+.md-typeset img[src*="Create%20Equipment%202.png"],
+.md-typeset img[src*="Create%20specialization%202.png"],
+.md-typeset img[src*="Create%20Skill%202.png"],
+.md-typeset img[src*="Edit%20brand%20hour%203.png"],
+.md-typeset img[src*="Deactive%20sunday%20brand%20hrs.png"],
+.md-typeset img[src*="Create%20Staff%20shift%20template%202.png"],
+.md-typeset img[src*="Create%20room%20name%202.png"],
+.md-typeset img[src*="Create%20brach-equip%202.png"],
+.md-typeset img[src*="create%20cat%202.png"] {
+    max-width: 240px;
+}
+
+/* Inline edit pencil icon */
+.md-typeset img[src*="Edit%20pencil.png"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 2px;
+    display: inline;
+}
+
+/* Make create service 1 bigger */
+.md-typeset img[src*="create%20service%201.png"] {
+    max-width: 700px;
+}
+
+/* Make create Staff 1 bigger */
+.md-typeset img[src*="create%20Staff%201.png"] {
+    max-width: 700px;
+}
+
+/* Make create staff 2 medium size */
+.md-typeset img[src*="create%20staff%202.png"] {
+    max-width: 400px;
+}
+
+/* Staff schedule images - make them landscape size */
+.md-typeset img[src*="Create%20staff%20sche%201.png"] {
+    max-width: 560px;
+}
+
+/* Make create staff sche 2 smaller */
+.md-typeset img[src*="Create%20Staff%20sche%202.png"] {
+    max-width: 340px;
+}
+
+/* Outlook tenant images */
+.md-typeset img[src*="outlook%20tenant%201.png"] {
+    max-width: 800px;
+}
+
+.md-typeset img[src*="outlook%20tenant%202.png"] {
+    max-width: 340px;
+}
