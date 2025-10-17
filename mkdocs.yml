@@ -1,4 +1,8 @@
 site_name: Scheduler User Guide
+site_url: https://hoangkimtrinh99-ai.github.io/Scheduler-Project-Guide/
+repo_url: https://github.com/hoangkimtrinh99-ai/Scheduler-Project-Guide
+repo_name: Scheduler-Project-Guide
+
 theme:
   name: material
   language: en
