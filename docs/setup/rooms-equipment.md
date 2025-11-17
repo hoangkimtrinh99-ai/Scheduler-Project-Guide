@@ -18,6 +18,8 @@ Click on the **Rooms** tab below the main menu
 
 ### Step 3: Create Room Type
 
+Click **Create** button and fill in the following information:
+
 - **Name**: Enter a descriptive name for the room type
 - **Description (Optional)**: Enter a description explaining the room type's purpose
 - Click **Create**
@@ -35,7 +37,9 @@ Click on the **Equipment** tab below the main menu
 ![Create Equipment - Step 1](../image/Create%20Equipment%201.png)
 
 ### Step 3: Create Equipment Type
+
 Click **Create** button and fill in the following information:
+
 - **Name**: Enter a descriptive name for the equipment type
 - **Description(Optional)**: Enter a description explaining the equipment type's purpose
 - Click **Create**

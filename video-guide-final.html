@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduler User Guide - Video Tutorials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            background: #f6f8fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #eaecef;
+            margin-bottom: 24px;
+            color: #24292e;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #eaecef;
+            margin-bottom: 16px;
+            color: #24292e;
+        }
+        
+        .section p {
+            margin-bottom: 16px;
+            color: #586069;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            margin: 20px 0;
+        }
+        
+        .video-container:hover {
+            transform: scale(1.01);
+        }
+        
+        .video-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        
+        .play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 68px;
+            height: 48px;
+            background: rgba(255, 0, 0, 0.9);
+            border-radius: 14px;
+            transition: background 0.2s ease;
+            z-index: 10;
+        }
+        
+        .video-container:hover .play-overlay {
+            background: rgba(255, 0, 0, 1);
+        }
+        
+        .play-overlay::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            width: 0;
+            height: 0;
+            border-left: 18px solid white;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+        }
+        
+        .youtube-link {
+            display: inline-block;
+            color: #0366d6;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #0366d6;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-size: 14px;
+        }
+        
+        .youtube-link:hover {
+            background: #0366d6;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .youtube-link::before {
+            content: "▶ ";
+        }
+        
+        hr {
+            height: 0.25em;
+            padding: 0;
+            margin: 32px 0;
+            background-color: #e1e4e8;
+            border: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scheduler User Guide - Video Tutorials</h1>
+        
+        <div class="section">
+            <h2>1. AI Chatbot - Create Staff Leave</h2>
+            <p>Learn how to use the AI chatbot to create staff leave requests efficiently.</p>
+            
+            <a href="https://youtu.be/Ks9WQjDT1LQ" target="_blank" style="text-decoration: none;">
+                <div class="video-container">
+                    <img src="https://img.youtube.com/vi/Ks9WQjDT1LQ/maxresdefault.jpg" 
+                         alt="AI Chatbot - Create Staff Leave"
+                         onerror="this.src='https://img.youtube.com/vi/Ks9WQjDT1LQ/hqdefault.jpg'">
+                    <div class="play-overlay"></div>
+                </div>
+            </a>
+            
+            <a href="https://youtu.be/Ks9WQjDT1LQ" target="_blank" class="youtube-link">Watch on YouTube</a>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2>2. Create Appointment</h2>
+            <p>Step-by-step guide on how to create appointments in the scheduler system.</p>
+            
+            <a href="https://youtu.be/fJUIHcan8e8" target="_blank" style="text-decoration: none;">
+                <div class="video-container">
+                    <img src="https://img.youtube.com/vi/fJUIHcan8e8/maxresdefault.jpg" 
+                         alt="Create Appointment"
+                         onerror="this.src='https://img.youtube.com/vi/fJUIHcan8e8/hqdefault.jpg'">
+                    <div class="play-overlay"></div>
+                </div>
+            </a>
+            
+            <a href="https://youtu.be/fJUIHcan8e8" target="_blank" class="youtube-link">Watch on YouTube</a>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2>3. Push Back Appointment</h2>
+            <p>Learn how to reschedule or push back appointments when needed.</p>
+            
+            <a href="https://youtu.be/2QfW5IrScBM" target="_blank" style="text-decoration: none;">
+                <div class="video-container">
+                    <img src="https://img.youtube.com/vi/2QfW5IrScBM/maxresdefault.jpg" 
+                         alt="Push Back Appointment"
+                         onerror="this.src='https://img.youtube.com/vi/2QfW5IrScBM/hqdefault.jpg'">
+                    <div class="play-overlay"></div>
+                </div>
+            </a>
+            
+            <a href="https://youtu.be/2QfW5IrScBM" target="_blank" class="youtube-link">Watch on YouTube</a>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2>4. Check Staff Appointment</h2>
+            <p>How to check and view staff appointments in the system.</p>
+            
+            <a href="https://youtu.be/yKg3lDbzaWY" target="_blank" style="text-decoration: none;">
+                <div class="video-container">
+                    <img src="https://img.youtube.com/vi/yKg3lDbzaWY/maxresdefault.jpg" 
+                         alt="Check Staff Appointment"
+                         onerror="this.src='https://img.youtube.com/vi/yKg3lDbzaWY/hqdefault.jpg'">
+                    <div class="play-overlay"></div>
+                </div>
+            </a>
+            
+            <a href="https://youtu.be/yKg3lDbzaWY" target="_blank" class="youtube-link">Watch on YouTube</a>
+        </div>
+    </div>
+</body>
+</html>
+

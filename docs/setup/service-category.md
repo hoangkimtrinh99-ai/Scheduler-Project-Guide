@@ -22,7 +22,7 @@ Service categories help customers to find the services they need and for staff t
 ![Create Category 2](../image/create%20cat%202.png)
 
 ### Step 3: Save Category
-- Click **Create** to add the category
+Click **Create** to add the category
 
 ## Next Steps
 

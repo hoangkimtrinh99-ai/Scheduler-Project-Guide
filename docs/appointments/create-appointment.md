@@ -45,11 +45,10 @@ When you book an appointment, you can trust that:
 ## Create Appointment
 
 ### Step 1: Navigate to Appointments
-- In the left-hand side menu, navigate to **Appointments**
+In the left-hand side menu, navigate to **Appointments**
 
 ### Step 2: Start Appointment Creation
-- Click **Create Appointment** button, or
-- Click on a **time slot** in the calendar view to start creating an appointment
+Click **Create Appointment** button, or click on a **time slot** in the calendar view to start creating an appointment
 
 ![Navigate to Appointments](../image/Create%20appointment%201.png)
 

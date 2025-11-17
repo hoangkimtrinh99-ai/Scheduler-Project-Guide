@@ -1,4 +1,4 @@
-# Outlook Integration (Staff)
+# Outlook Integration For Staff
 
 This guide will walk you through setting up Outlook integration for individual staff members, allowing them to sync their assigned appointments with their personal Outlook calendars.
 
@@ -10,15 +10,19 @@ Staff-level Outlook integration enables:
 - Personal calendar management for each staff member
 - Automatic updates when appointments are assigned or modified
 
-## Setup Outlook Integration (Staff)
+## Setup Outlook Integration For Staff
 
 ### Step 1: Navigate to Staff Management
 - In the left-hand side menu, navigate to **Staffs** → **Staffs**
-- Click **Edit** on the staff member you want to set up Outlook integration for
+- Click ![Edit](../image/Edit%20pencil.png) **Edit** on the staff member you want to set up Outlook integration for
+
+![Staff Outlook 1](../image/Staff%20outlook%201.png)
 
 ### Step 2: Send Authentication URL
 - In the staff member's profile, locate the **Outlook Integration** section
 - Click **Send Authentication URL**
+
+![Staff Outlook 2](../image/Staff%20outlook%202.png)
 
 ### Step 3: Staff Authentication Process
 - An authentication URL will be sent to the staff member's email address

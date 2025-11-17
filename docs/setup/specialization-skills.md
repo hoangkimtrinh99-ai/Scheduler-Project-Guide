@@ -21,6 +21,9 @@ Click on the **Specialization** tab below the main menu
 ![Create Specialization - Step 1](../image/Create%20specialization%201.png)
 
 ### Step 3: Create Specialization
+
+Click **Create** button and fill in the following information:
+
 - **Name**: Enter a descriptive name for the specialization
 - **Description (Optional)**: Enter a description explaining the specialization
 - Click **Create Specialization**
@@ -38,6 +41,9 @@ Click on the **Skills** tab below the main menu
 ![Create Skill - Step 1](../image/Create%20Skill%201.png)
 
 ### Step 3: Create Skill
+
+Click **Create** button and fill in the following information:
+
 - **Name**: Enter a descriptive name for the skill
 - **Description (Optional)**: Enter a description explaining the skill
 - Click **Create Skill**

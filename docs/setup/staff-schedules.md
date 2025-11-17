@@ -15,7 +15,7 @@ Staff schedules define when staff members are available to provide services. The
 ![Create Staff Schedule 1](../image/Create%20staff%20sche%201.png)
 
 ### Step 2: Select Staff Members
-- Select the staff members you want to create schedules for. You can select multiple staff members at once
+Select the staff members you want to create schedules for. You can select multiple staff members at once
 
 ### Step 3: Schedule Details
 - **Select Branch**: Choose the branch for this schedule
@@ -29,7 +29,7 @@ Staff schedules define when staff members are available to provide services. The
 ![Create Staff Schedule 2](../image/Create%20Staff%20sche%202.png)
 
 ### Step 5: Save Schedule
-- Click **Add Schedule** to create the schedule
+Click **Add Schedule** to create the schedule
 
 ## 📹 Video Tutorial
 

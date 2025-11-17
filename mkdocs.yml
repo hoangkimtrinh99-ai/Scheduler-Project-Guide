@@ -30,7 +30,6 @@ extra_javascript:
   - javascripts/fix-navigation.js
 
 nav:
-  - Home: index.md
   - Setup:
       - Pre-criteria: setup/pre-criteria.md
       - Rooms & Equipment: setup/rooms-equipment.md
@@ -44,7 +43,9 @@ nav:
       - Staff / Counsellors: setup/staff.md
       - Staff Schedules: setup/staff-schedules.md
   - Integration:
-      - Outlook (Tenant): integration/outlook-tenant.md
-      - Outlook (Staff): integration/outlook-staff.md
+      - Outlook Integration (Tenant): integration/outlook-tenant.md
+      - Outlook Integration (Staff): integration/outlook-staff.md
+      - AI Chatbot (Staff): integration/ai-chatbot-staff.md
+      - WhatsApp (Customers): integration/whatsapp-customer.md
   - Appointments:
       - Create Appointment: appointments/create-appointment.md

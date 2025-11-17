@@ -47,7 +47,7 @@ Click ![Edit](../image/Edit%20pencil.png) to **view the branch**
 
 ## 📹 Video Tutorial
 
-Follow along in this short video to see exactly how it's done
+Follow along in this short video to see exactly how it's done!
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0;">
   <iframe src="https://www.youtube.com/embed/1wdqC2Ftq9A" 

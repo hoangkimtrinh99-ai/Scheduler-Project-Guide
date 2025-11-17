@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test YouTube Embed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .test-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .info {
+            margin-top: 15px;
+            padding: 10px;
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            border-radius: 4px;
+        }
+        
+        .error-check {
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Embed Test - Scheduler Videos</h1>
+    
+    <div class="test-section">
+        <h2>Video 1: AI Chatbot - Create Staff Leave</h2>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/Ks9WQjDT1LQ"
+                title="AI Chatbot - Create Staff Leave"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="info">
+            <strong>Video ID:</strong> Ks9WQjDT1LQ<br>
+            <strong>URL:</strong> <a href="https://youtu.be/Ks9WQjDT1LQ" target="_blank">https://youtu.be/Ks9WQjDT1LQ</a>
+        </div>
+        <div class="error-check">
+            ✓ If you see the video player above, embedding is working<br>
+            ✗ If you see "Video unavailable" or error, the video settings may need adjustment
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Video 2: Create Appointment</h2>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/fJUIHcan8e8"
+                title="Create Appointment"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="info">
+            <strong>Video ID:</strong> fJUIHcan8e8<br>
+            <strong>URL:</strong> <a href="https://youtu.be/fJUIHcan8e8" target="_blank">https://youtu.be/fJUIHcan8e8</a>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Video 3: Push Back Appointment</h2>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/2QfW5IrScBM"
+                title="Push Back Appointment"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="info">
+            <strong>Video ID:</strong> 2QfW5IrScBM<br>
+            <strong>URL:</strong> <a href="https://youtu.be/2QfW5IrScBM" target="_blank">https://youtu.be/2QfW5IrScBM</a>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Video 4: Check Staff Appointment</h2>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/yKg3lDbzaWY"
+                title="Check Staff Appointment"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="info">
+            <strong>Video ID:</strong> yKg3lDbzaWY<br>
+            <strong>URL:</strong> <a href="https://youtu.be/yKg3lDbzaWY" target="_blank">https://youtu.be/yKg3lDbzaWY</a>
+        </div>
+    </div>
+    
+    <div class="test-section" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+        <h2>⚠️ Troubleshooting</h2>
+        <p><strong>If videos don't show:</strong></p>
+        <ol>
+            <li>Check if videos are set to "Public" or "Unlisted" (not Private)</li>
+            <li>In YouTube Studio, go to each video's settings</li>
+            <li>Under "Visibility" → Make sure it's not "Private"</li>
+            <li>Under "Advanced settings" → Check "Allow embedding" is enabled</li>
+            <li>Some browsers may block iframes - try a different browser</li>
+            <li>Check if you have any ad blockers that might block YouTube embeds</li>
+        </ol>
+        <p><strong>Current embed URL format:</strong> https://www.youtube.com/embed/VIDEO_ID</p>
+    </div>
+</body>
+</html>
+

@@ -1,4 +1,4 @@
-# 📋 Pre-criteria
+# Pre-criteria
 
 ## Overview
 
@@ -6,7 +6,7 @@ Before setting up the Scheduler system, ensure the following prerequisites are m
 
 ---
 
-## ✅ Required Prerequisites
+## Required Prerequisites
 
 **1. Tenant Setup (CRS):** The tenant must already be set up
 
@@ -16,7 +16,7 @@ Before setting up the Scheduler system, ensure the following prerequisites are m
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 Once all prerequisites are verified, proceed with the scheduler setup.
 

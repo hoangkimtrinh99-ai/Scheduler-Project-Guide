@@ -45,7 +45,7 @@ Services are the bookable offerings in your scheduler system. Each service defin
 - **Disregard Cancellation Policy**: Leave this section for now
 
 ### Step 5: Save Service
-- Click **Create Service** to save the service
+Click **Create Service** to save the service
 
 ## 📹 Video Tutorial
 

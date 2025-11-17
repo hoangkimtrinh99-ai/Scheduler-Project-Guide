@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduler User Guide - Video Tutorials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .section h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .section p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+        .video-thumbnail-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-thumbnail-container:hover {
+            transform: scale(1.02);
+        }
+        
+        .video-thumbnail-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-button-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 0, 0, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+        
+        .video-thumbnail-container:hover .play-button-overlay {
+            background: rgba(255, 0, 0, 1);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .play-button-overlay::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+        
+        .youtube-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .youtube-link:hover {
+            background: #cc0000;
+        }
+        
+        .youtube-link::before {
+            content: "▶ ";
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Scheduler User Guide - Video Tutorials</h1>
+        
+        <div class="section">
+            <h2><span class="section-number">1</span> AI Chatbot - Create Staff Leave</h2>
+            <p>Learn how to use the AI chatbot to create staff leave requests efficiently.</p>
+            <a href="https://youtu.be/Ks9WQjDT1LQ" target="_blank" style="text-decoration: none;">
+                <div class="video-thumbnail-container">
+                    <img src="https://img.youtube.com/vi/Ks9WQjDT1LQ/maxresdefault.jpg" 
+                         alt="AI Chatbot - Create Staff Leave"
+                         onerror="this.src='https://img.youtube.com/vi/Ks9WQjDT1LQ/hqdefault.jpg'">
+                    <div class="play-button-overlay"></div>
+                </div>
+            </a>
+            <a href="https://youtu.be/Ks9WQjDT1LQ" target="_blank" class="youtube-link">Open in YouTube</a>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2><span class="section-number">2</span> Create Appointment</h2>
+            <p>Step-by-step guide on how to create appointments in the scheduler system.</p>
+            <a href="https://youtu.be/fJUIHcan8e8" target="_blank" style="text-decoration: none;">
+                <div class="video-thumbnail-container">
+                    <img src="https://img.youtube.com/vi/fJUIHcan8e8/maxresdefault.jpg" 
+                         alt="Create Appointment"
+                         onerror="this.src='https://img.youtube.com/vi/fJUIHcan8e8/hqdefault.jpg'">
+                    <div class="play-button-overlay"></div>
+                </div>
+            </a>
+            <a href="https://youtu.be/fJUIHcan8e8" target="_blank" class="youtube-link">Open in YouTube</a>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2><span class="section-number">3</span> Push Back Appointment</h2>
+            <p>Learn how to reschedule or push back appointments when needed.</p>
+            <a href="https://youtu.be/2QfW5IrScBM" target="_blank" style="text-decoration: none;">
+                <div class="video-thumbnail-container">
+                    <img src="https://img.youtube.com/vi/2QfW5IrScBM/maxresdefault.jpg" 
+                         alt="Push Back Appointment"
+                         onerror="this.src='https://img.youtube.com/vi/2QfW5IrScBM/hqdefault.jpg'">
+                    <div class="play-button-overlay"></div>
+                </div>
+            </a>
+            <a href="https://youtu.be/2QfW5IrScBM" target="_blank" class="youtube-link">Open in YouTube</a>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2><span class="section-number">4</span> Check Staff Appointment</h2>
+            <p>How to check and view staff appointments in the system.</p>
+            <a href="https://youtu.be/yKg3lDbzaWY" target="_blank" style="text-decoration: none;">
+                <div class="video-thumbnail-container">
+                    <img src="https://img.youtube.com/vi/yKg3lDbzaWY/maxresdefault.jpg" 
+                         alt="Check Staff Appointment"
+                         onerror="this.src='https://img.youtube.com/vi/yKg3lDbzaWY/hqdefault.jpg'">
+                    <div class="play-button-overlay"></div>
+                </div>
+            </a>
+            <a href="https://youtu.be/yKg3lDbzaWY" target="_blank" class="youtube-link">Open in YouTube</a>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -6,23 +6,23 @@ Welcome to the comprehensive Scheduler setup and user guide. This documentation 
 
 The **Scheduler** is a comprehensive appointment booking and management system designed for businesses that need to coordinate staff, resources, and customer appointments efficiently. Whether you run a clinic, salon, consulting firm, or any service-based business, Scheduler helps you:
 
-**📅 Manage Appointments**: Book, schedule, and track customer appointments with ease  
+- **Manage Appointments**: Book, schedule, and track customer appointments with ease  
 
-**👥 Staff Coordination**: Assign staff members, manage schedules, and track availability  
+- **Staff Coordination**: Assign staff members, manage schedules, and track availability  
 
-**🏢 Multi-Branch Support**: Handle multiple locations with different operating hours and resources  
+- **Multi-Branch Support**: Handle multiple locations with different operating hours and resources  
 
-**🔧 Resource Management**: Track rooms, equipment, and other resources needed for services  
+- **Resource Management**: Track rooms, equipment, and other resources needed for services  
 
-**📊 Smart Booking**: Automatically find available time slots based on staff schedules and resource availability  
+- **Smart Booking**: Automatically find available time slots based on staff schedules and resource availability  
 
-**📱 Outlook Integration**: Sync appointments with Microsoft Outlook for seamless calendar management
+- **Outlook Integration**: Sync appointments with Microsoft Outlook for seamless calendar management
 
 ---
 
 ## Quick Start
 
-**✅ Prerequisites**: Before you begin, ensure you have completed the [Pre-criteria](setup/pre-criteria.md) requirements:
+**Prerequisites**: Before you begin, ensure you have completed the [Pre-criteria](setup/pre-criteria.md) requirements:
 
 - Tenant has been set up (CRS)
 - At least 1 Branch has been created  
@@ -30,7 +30,7 @@ The **Scheduler** is a comprehensive appointment booking and management system d
 
 ---
 
-## 📋 Setup Flow
+## Setup Flow
 
 Follow these steps in order for a complete scheduler setup:
 
@@ -48,18 +48,27 @@ Follow these steps in order for a complete scheduler setup:
 
 ---
 
-## 🔗 Integration & Usage
+## Integration & Usage
 
 ### Outlook Integration
-**Sync appointments with Outlook calendars**
+Sync appointments with Outlook calendars
 
 - [Tenant Integration](integration/outlook-tenant.md)
-
 - [Staff Integration](integration/outlook-staff.md)
 
-### Create Appointments
-**Book and manage appointments**
+### AI Chatbot for Staff
+Intelligent virtual assistant for staff schedule management
 
-[Book Appointments](appointments/create-appointment.md)
+- [AI Chatbot](integration/ai-chatbot-staff.md)
+
+### WhatsApp for Customers
+Automated booking and appointment management via WhatsApp
+
+- [WhatsApp Integration](integration/whatsapp-customer.md)
+
+### Create Appointments
+Book and manage appointments
+
+- [Book Appointments](appointments/create-appointment.md)
 
 ---

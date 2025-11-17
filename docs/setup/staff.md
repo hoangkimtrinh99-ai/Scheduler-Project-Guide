@@ -25,12 +25,12 @@ Staff members are the people who provide services to your customers. Each staff 
 - **Select Skills**: Choose from previously created skills
 
 ### Step 4: Service Availability
-- **Select Services**: Choose which services the staff member can be booked for or leave as "All Services"
+**Select Services**: Choose which services the staff member can be booked for or leave as "All Services"
 
 ![Create Staff 2](../image/create%20staff%202.png)
 
 ### Step 5: Save Staff Member
-- Click **Create Staff** to add the staff member
+Click **Create Staff** to add the staff member
 
 ## 📹 Video Tutorial
 

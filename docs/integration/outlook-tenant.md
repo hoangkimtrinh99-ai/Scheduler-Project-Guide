@@ -1,4 +1,4 @@
-# Outlook Integration (Tenant)
+# Outlook Integration For Tenant
 
 This guide will walk you through setting up Outlook integration for the tenant, allowing all appointments to be synced with the tenant's Outlook calendar.
 
@@ -10,7 +10,7 @@ Tenant-level Outlook integration enables:
 - Real-time updates when appointments are created, modified, or cancelled
 - Centralized calendar management for the organization
 
-## Setup Outlook Integration (Tenant)
+## Setup Outlook Integration For Tenant
 
 ### Step 1: Navigate to Integrations
 - In the left-hand side menu, navigate to **Settings** → **Integrations**
